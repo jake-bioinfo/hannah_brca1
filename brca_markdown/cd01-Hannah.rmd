@@ -1,0 +1,75 @@
+---
+title: "cd01-Curriculum Development Breast Cancer Case: Hannah"
+author: "Jake Reed"
+date: '`r Sys.Date()`'
+output:
+  html_document: 
+    theme: simplex
+    highlight: tango
+    toc: yes
+  pdf_document:
+    highlight: tango
+    toc: yes
+---
+
+# Introduction
+
+Hannah is a young high school aged women who has a family history of breast cancer. She is concerned about her risk of developing breast cancer and is interested in learning more about the disease. She is also interested in learning about the different screening and diagnostic tests that are available for breast cancer. Currently, Hannah along with her Mother (Deborah), and two sisters (Sarah and Rachel) have all undergone a genetics test for mutations in BRCA1 called restriction digest followed by gel electrophoresis to determine if any of the family members have a mutation in the BRCA1 gene. The results of the test showed ??????. 
+
+Today we will be investigating this topic from another angle. We will be performing a multiple sequence alignment of the BRCA1 gene from the listed sample donors. Here we will be able to see the exact differences in the genes of each of the family members regarding the BRCA1 gene. 
+
+# Science Background
+
+BRCA1 is a tumor suppressor gene [pathway maybe]. Specifically, it's a gene that codes for a protein that helps repair damaged DNA. When BRCA1 is mutated, it can lead to an increased risk of developing breast and ovarian cancer due to it's inability to repair damaged DNA. Unrepaired DNA damage can lead to an accumulation of mutations in the cell which can lead to unregulated cell division and ultimately cancer. 
+
+## Different types of mutations
+1. A **synonymous mutation** is a mutation that does not change the amino acid sequence of the protein. This is because the genetic code is redundant, meaning that multiple codons can code for the same amino acid.
+2. A **non-synonymous mutation** is a mutation that changes the amino acid sequence of the protein. This can have a significant impact on the function of the protein, depending on the location and nature of the mutation.
+3. **Sense mutations** are mutations that change the amino acid sequence of the protein, but do not affect the function of the protein.
+4. **Nonsense mutations** are mutations that change the amino acid sequence of the protein, and result in a premature stop codon. This can lead to a truncated protein that is non-functional.
+5. **Single nucleotide polymorphisms (SNPs)** are single nucleotide changes in the DNA sequence that are present in at least 1% of the population. SNPs can be synonymous or non-synonymous, and can have a wide range of effects on protein function.
+6. **Indels** are insertions or deletions of nucleotides in the DNA sequence. Indels can cause a frameshift mutation, which can have a significant impact on the function of the protein.
+
+All of these mutations can be visualized with a multiple sequence alignment. A multiple sequence alignment is a method used to compare the DNA or protein sequences of multiple organisms or individuals. By aligning the sequences, we can identify similarities and differences between the sequences, and identify mutations that may be associated with disease or other phenotypes.
+
+# Getting Started
+Install R and Rstudio on your computer. You can download R from the Comprehensive R Archive Network [CRAN](https://cran.r-project.org/bin/windows/base/) website, and Rstudio from the Rstudio [website](https://posit.co/download/rstudio-desktop/). [[image from CRAN website maybe]]
+
+Next you will need to install clustalw, a multiple sequence alignment tool. You can download clustalw from the [clustal website](http://www.clustal.org/download/current/). [[image from EMBL-EBI website maybe]]
+
+# Start Computational Exercise
+First, we will load the necessary R packages for this exercise.
+
+## Install and Load necessary R packages
+We will be using the package `alignstatplot` and `ggplot2` in conjuction to visualize the multiple sequence alignment of the BRCA1 gene from the sample donors.
+## Libraries
+```{r lib, message=FALSE, warning=FALSE}
+library(Biostrings)
+library(msa)
+library(ggmsa)
+library(bios2mds)
+library(ggplot2)
+```
+
+```{r test, eval = FALSE}
+dna <- Biostrings::readDNAStringSet("/home/jake/Documents/curriculum_development/brca_markdown/input/ncbi_dataset/data/Sample_sequences.fasta")
+aa <- Biostrings::translate(dna)
+dna_align <- msa::msa(dna)
+saveRDS(dna_align, "/home/jake/Documents/curriculum_development/brca_markdown/results/dna_align.rds")
+aa_align <- msa::msa(aa)
+saveRDS(aa_align, "/home/jake/Documents/curriculum_development/brca_markdown/results/aa_align.rds")
+```
+
+```{r print, fig.width=22, fig.height=5}
+defaultW <- getOption("warn")
+options(warn = -1)
+dna_align <- readRDS("/home/jake/Documents/curriculum_development/brca_markdown/results/dna_align.rds")
+bios2mds::export.fasta(dna_align, "/home/jake/Documents/curriculum_development/brca_markdown/results/dna_align.fasta")
+dna_a_file <- "/home/jake/Documents/curriculum_development/brca_markdown/results/dna_align.fasta"
+aa_align <- readRDS("/home/jake/Documents/curriculum_development/brca_markdown/results/aa_align.rds")
+bios2mds::export.fasta(aa_align, "/home/jake/Documents/curriculum_development/brca_markdown/results/aa_align.fasta")
+aa_a_file <- "/home/jake/Documents/curriculum_development/brca_markdown/results/aa_align.fasta"
+ggmsa::ggmsa(aa_a_file, start = 1, end = 100, seq_name = TRUE) + geom_seqlogo() + geom_msaBar()
+ggmsa::ggmsa(dna_a_file, start = 1, end = 100, seq_name = TRUE) + geom_seqlogo() + geom_msaBar()
+options(warn = defaultW)
+```
