@@ -1,0 +1,1 @@
+cmd:mutation-simulator -o ./Deborah gene.fna args -sn 0.2 -in 0.2 -n Deborah

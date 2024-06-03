@@ -1,0 +1,60 @@
+NC_000017.11	43036291	43036586	silencer	0	.
+NC_000017.11	43043040	43043583	enhancer	0	.
+NC_000017.11	43062978	43063514	enhancer	0	.
+NC_000017.11	43072037	43072243	silencer	0	.
+NC_000017.11	43091118	43092318	enhancer	0	.
+NC_000017.11	43119628	43119816	non_allelic_homologous	0	.
+NC_000017.11	43119736	43119931	silencer	0	.
+NC_000017.11	43119849	43119872	non_allelic_homologous	0	.
+NC_000017.11	43119949	43120300	non_allelic_homologous	0	.
+NC_000017.11	43119949	43120186	non_allelic_homologous	0	.
+NC_000017.11	43119956	43120061	enhancer	0	.
+NC_000017.11	43124494	43124518	protein_bind: Sp1 transcription factor	0	.
+NC_000017.11	43124659	43124695	silencer	0	.
+NC_000017.11	43125133	43125154	protein_bind: cAMP responsive element binding protein 1	0	.
+NC_000017.11	43125138	43125166	protein_bind: Sp1 and Sp3 transcription factors	0	.
+NC_000017.11	43125138	43125154	protein_bind: estrogen receptor 1	0	.
+NC_000017.11	43125348	43127105	promoter	0	.
+NC_000017.11	43125348	43125615	promoter	0	.
+NC_000017.11	43125397	43125439	protein_bind: E2F transcription factor 1	0	.
+NC_000017.11	43125397	43125439	protein_bind: E2F transcription factor 4	0	.
+NC_000017.11	43125397	43125439	protein_bind: RB transcriptional corepressor like 1	0	.
+NC_000017.11	43125397	43125439	protein_bind: RB transcriptional corepressor like 2	0	.
+NC_000017.11	43125397	43125439	protein_bind: transcription factor Dp-1	0	.
+NC_000017.11	43125398	43125438	protein_bind: GA binding protein transcription factor alpha subunit	0	.
+NC_000017.11	43125411	43125435	protein_bind: tumor protein p53 binding protein 1	0	.
+NC_000017.11	43125415	43125438	enhancer	0	.
+NC_000017.11	43125415	43125438	transcriptional_cis_regulatory_region	0	.
+NC_000017.11	43125544	43125674	enhancer	0	.
+NC_000017.11	43125545	43125575	protein_bind: Jun and FOS like 2 proto-oncogenes, AP-1 transcription factor subunits	0	.
+NC_000017.11	43125552	43125592	protein_bind: YY1 transcription factor	0	.
+NC_000017.11	43125556	43125592	protein_bind: far upstream element binding protein 1	0	.
+NC_000017.11	43125556	43125592	protein_bind: replication protein A1	0	.
+NC_000017.11	43125556	43125566	protein_bind: cAMP responsive element binding protein 1	0	.
+NC_000017.11	43125559	43125600	protein_bind: high mobility group AT-hook 1	0	.
+NC_000017.11	43125567	43125595	protein_bind: #GA binding protein transcription factor alpha subunit	0	.
+NC_000017.11	43125567	43125595	protein_bind: GA binding protein transcription factor beta subunit 1 and 2	0	.
+NC_000017.11	43125570	43125595	enhancer	0	.
+NC_000017.11	43125572	43125599	protein_bind: ETS proto-oncogene 2, transcription factor	0	.
+NC_000017.11	43125599	43125608	transcriptional_cis_regulatory_region	0	.
+NC_000017.11	43125724	43125814	enhancer	0	.
+NC_000017.11	43125734	43125758	protein_bind: Sp1 transcription factor	0	.
+NC_000017.11	43125783	43125833	protein_bind: CCCTC-binding factor	0	.
+NC_000017.11	43125943	43125967	protein_bind: early growth response 1	0	.
+NC_000017.11	43126284	43126314	transcriptional_cis_regulatory_region	0	.
+NC_000017.11	43126412	43126469	protein_bind: CCCTC-binding factor	0	.
+NC_000017.11	43126431	43126453	protein_bind: Sp1 transcription factor	0	.
+NC_000017.11	43126664	43126694	transcriptional_cis_regulatory_region	0	.
+NC_000017.11	43126718	43126736	silencer	0	.
+NC_000017.11	43126742	43127556	enhancer	0	.
+NC_000017.11	43127138	43127162	protein_bind: Sp1 transcription factor	0	.
+NC_000017.11	43146581	43147191	enhancer	0	.
+NC_000017.11	43156562	43156750	non_allelic_homologous	0	.
+NC_000017.11	43156783	43156806	non_allelic_homologous	0	.
+NC_000017.11	43156883	43157234	non_allelic_homologous	0	.
+NC_000017.11	43156883	43157120	non_allelic_homologous	0	.
+NC_000017.11	43159411	43159942	enhancer	0	.
+NC_000017.11	43170034	43170244	enhancer	0	.
+NC_000017.11	43170514	43170564	enhancer	0	.
+NC_000017.11	43170814	43170924	enhancer	0	.
+NC_000017.11	43171244	43171354	enhancer	0	.

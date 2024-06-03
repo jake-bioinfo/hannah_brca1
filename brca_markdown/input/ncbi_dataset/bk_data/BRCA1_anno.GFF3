@@ -1,0 +1,17 @@
+##gff-version 3
+#!gff-spec-version 1.21
+#!processor NCBI annotwriter
+##sequence-region NC_000017.11 43025389 43189231
+##species https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?name=Homo+sapiens
+NC_000017.11	RefSeq	region	43025389	43189231	.	+	.	ID=NC_000017.11:1..83257441;Name=17;chromosome=17;gbkey=Src;genome=chromosome;mol_type=genomic DNA
+NC_000017.11	RefSeq	gene	43025389	43032041	.	+	.	ID=gene-ENSG00000108830;Dbxref=Ensembl:ENSG00000108830;Name=ENSG00000108830;description=RND2;gbkey=Gene;gene=ENSG00000108830;gene_biotype=other;gene_id=ENSG00000108830;gene_name=RND2;gene_source=ensembl_havana;gene_version=11;partial=true;start_range=.,43025389
+NC_000017.11	RefSeq	gene	43044295	43170245	.	-	.	ID=gene-ENSG00000012048;Dbxref=Ensembl:ENSG00000012048;Name=ENSG00000012048;description=BRCA1;gbkey=Gene;gene=ENSG00000012048;gene_biotype=other;gene_id=ENSG00000012048;gene_name=BRCA1;gene_source=ensembl_havana;gene_version=26
+NC_000017.11	RefSeq	pseudogene	43079302	43079780	.	+	.	ID=gene-ENSG00000240828;Dbxref=Ensembl:ENSG00000240828;Name=ENSG00000240828;description=RPL21P4;gbkey=Gene;gene=ENSG00000240828;gene_biotype=pseudogene;gene_id=ENSG00000240828;gene_name=RPL21P4;gene_source=havana;gene_version=1;pseudo=true
+NC_000017.11	RefSeq	gene	43125551	43153671	.	+	.	ID=gene-ENSG00000198496;Dbxref=Ensembl:ENSG00000198496;Name=ENSG00000198496;description=NBR2;gbkey=Gene;gene=ENSG00000198496;gene_biotype=other;gene_id=ENSG00000198496;gene_name=NBR2;gene_source=havana;gene_version=12
+NC_000017.11	RefSeq	pseudogene	43131208	43131270	.	+	.	ID=gene-ENSG00000285057;Dbxref=Ensembl:ENSG00000285057;Name=ENSG00000285057;gbkey=Gene;gene=ENSG00000285057;gene_biotype=pseudogene;gene_id=ENSG00000285057;gene_source=ensembl_havana;gene_version=1;pseudo=true
+NC_000017.11	RefSeq	pseudogene	43144956	43145255	.	+	.	ID=gene-ENSG00000267681;Dbxref=Ensembl:ENSG00000267681;Name=ENSG00000267681;gbkey=Gene;gene=ENSG00000267681;gene_biotype=pseudogene;gene_id=ENSG00000267681;gene_source=havana;gene_version=1;pseudo=true
+NC_000017.11	RefSeq	gene	43148368	43171037	.	-	.	ID=gene-ENSG00000267002;Dbxref=Ensembl:ENSG00000267002;Name=ENSG00000267002;gbkey=Gene;gene=ENSG00000267002;gene_biotype=other;gene_id=ENSG00000267002;gene_source=havana;gene_version=4
+NC_000017.11	RefSeq	pseudogene	43168170	43168249	.	-	.	ID=gene-ENSG00000267595;Dbxref=Ensembl:ENSG00000267595;Name=ENSG00000267595;description=BRCA1P1;gbkey=Gene;gene=ENSG00000267595;gene_biotype=pseudogene;gene_id=ENSG00000267595;gene_name=BRCA1P1;gene_source=havana;gene_version=1;pseudo=true
+NC_000017.11	RefSeq	pseudogene	43169880	43170077	.	-	.	ID=gene-ENSG00000267340;Dbxref=Ensembl:ENSG00000267340;Name=ENSG00000267340;gbkey=Gene;gene=ENSG00000267340;gene_biotype=pseudogene;gene_id=ENSG00000267340;gene_source=havana;gene_version=1;pseudo=true
+NC_000017.11	RefSeq	gene	43170481	43189231	.	+	.	ID=gene-ENSG00000188554;Dbxref=Ensembl:ENSG00000188554;Name=ENSG00000188554;description=NBR1;end_range=43189231,.;gbkey=Gene;gene=ENSG00000188554;gene_biotype=other;gene_id=ENSG00000188554;gene_name=NBR1;gene_source=ensembl_havana;gene_version=15;partial=true
+###
